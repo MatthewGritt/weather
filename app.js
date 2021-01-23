@@ -9,7 +9,6 @@ const windEl = document.querySelector(".wind");
 
 searchInput.addEventListener("keypress", (e) => {
   if (e.keyCode === 13) {
-    console.log(e.target.value);
     weatherData(e.target.value);
     e.target.value = "";
   }
