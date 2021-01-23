@@ -22,7 +22,6 @@ async function weatherData(cityName) {
 }
 
 function showData(data) {
-  console.log(data);
   if (data.name) {
     cityEl.innerText = `${data.name},  ${data.sys.country}`;
     tempEl.innerHTML = `${Math.round(data.main.temp)}<span>°C</span>`;
